@@ -1,4 +1,6 @@
 package com.example.onboarding.base
 
-class BaseFragment {
+import androidx.fragment.app.Fragment
+
+open class BaseFragment : Fragment() {
 }

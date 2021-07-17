@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_flow_xml"
+    app:startDestination="@id/splashFragment2">
+    <fragment
+        android:id="@+id/splashFragment2"
+        tools:layout="@layout/splash_fragment"
+        android:name="com.example.onboarding.fragments.splash.splashFragment"
+        android:label="splashFragment" >
+        <action
+            android:id="@+id/action_splashFragment2_to_chooseFramgment"
+            app:destination="@id/chooseFramgment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseFramgment"
+        android:name="com.example.onboarding.fragments.chooseFragment.chooseFramgment"
+        android:label="chooseFramgment" >
+        <action
+            android:id="@+id/action_chooseFramgment_to_findFragment"
+            app:destination="@id/findFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findFragment"
+        android:name="com.example.onboarding.fragments.findFragment.findFragment"
+        android:label="findFragment" >
+        <action
+            android:id="@+id/action_findFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.onboarding.fragments.registerFragment.registerFragment"
+        android:label="registerFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_splashFragment2"
+            app:destination="@id/splashFragment2" />
+    </fragment>
+</navigation>
