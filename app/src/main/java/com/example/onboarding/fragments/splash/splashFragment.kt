@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
+
 import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 import com.example.onboarding.R
@@ -34,7 +34,8 @@ class splashFragment : BaseFragment() {
 
             override fun onAnimationEnd(animation: Animator?) {
                 //
-                findNavController().navigate(R.id.action_splashFragment2_to_chooseFramgment)
+               //findNavController().navigate(R.id.action_splashFragment_to_viewpagerFragment2)
+                findNavController().navigate(R.id.action_splashFragment_to_viewpagerFragment2)
             }
 
             override fun onAnimationCancel(animation: Animator?) {

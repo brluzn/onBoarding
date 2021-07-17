@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigate_flow"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.onboarding.fragments.splash.splashFragment"
+        android:label="splashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewpagerFragment2"
+            app:destination="@id/viewpagerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewpagerFragment2"
+        android:name="com.example.onboarding.fragments.viewpager.viewpagerFragment"
+        android:label="viewpagerFragment" />
+</navigation>
