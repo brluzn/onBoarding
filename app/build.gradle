@@ -49,4 +49,8 @@ dependencies {
 
     def lottieVersion="3.7.1"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+
+    //indicator
+    implementation 'com.tbuonomo:dotsindicator:4.2'
 }
