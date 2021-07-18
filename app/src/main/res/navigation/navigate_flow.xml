@@ -15,5 +15,13 @@
     <fragment
         android:id="@+id/viewpagerFragment2"
         android:name="com.example.onboarding.fragments.viewpager.viewpagerFragment"
-        android:label="viewpagerFragment" />
+        android:label="viewpagerFragment" >
+        <action
+            android:id="@+id/action_viewpagerFragment2_to_lastFragment"
+            app:destination="@id/lastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.example.onboarding.fragments.lastFragment.lastFragment"
+        android:label="lastFragment" />
 </navigation>

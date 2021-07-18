@@ -53,4 +53,7 @@ dependencies {
 
     //indicator
     implementation 'com.tbuonomo:dotsindicator:4.2'
+
+    //button-arsenal
+
 }
